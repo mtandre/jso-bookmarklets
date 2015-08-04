@@ -176,7 +176,7 @@
                 </section>
                 <section class="post">
                     <header class="post-header">
-                        <a class="post-button pure-button pure-button-primary" onmousedown="ga('send', 'event', 'bookmarklet', 'cache bust');" href='javascript:(function(){for(var a=window.location.search.substring(1),b="",c=0;8>c;c++)var d=Math.floor(26*Math.random()),b=b+"ABCDEFGHIJKLMnopqrstuvwxyz".substring(d,d+1);a=0<a.length?a+"&c="+b:"?c="+b;window.location.search=a;})();' title="Click and drag this button to your browser's bookmark bar.">Cache Bust</a>
+                        <a class="post-button pure-button pure-button-primary" onmousedown="ga('send', 'event', 'bookmarklet', 'cache bust');" href='javascript:(function(){for(var a=window.location.search.substring(1),b="",c=0;8>c;c++)var d=Math.floor(26*Math.random()),b=b+"ABCDEFGHIJKLMnopqrstuvwxyz".substring(d,d+1);a=0<a.length?-1<a.indexOf("&c=")?a.replace(/&c=\w{7,9}/,"&c="+b):a+"&c="+b:"?c="+b;window.location.search=a;})();' title="Click and drag this button to your browser's bookmark bar.">Cache Bust</a>
                         <h2 class="post-title">Get the latest version of the page</h2>
                         <p class="post-meta">
                             <span class="post-category post-category-updated" href="#">Updated: Feb. 20, 2015</span>
