@@ -133,12 +133,20 @@
             }
         }
     </style>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-61758561-2', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body>
     <div id="layout" class="pure-g">
         <div class="sidebar pure-u-1 pure-u-md-1-4">
             <div class="header">
-                <h1 class="brand-title">JSOnline Helpers</h1>
+                <h1 class="brand-title">MJS & JMG Helpers</h1>
                 <h2 class="brand-tagline">Tools to help working with Clickability</h2>
             </div>
         </div>
@@ -190,6 +198,20 @@
                 </section>
                 <section class="post">
                     <header class="post-header">
+                        <a class="post-button pure-button pure-button-primary" onmousedown="ga('send', 'event', 'bookmarklet', 'toggle mobile');" href='javascript:(function(){var url=window.location.href,newUrl="";if(-1<url.indexOf("jsonline.com"))newUrl=-1<url.indexOf("www.jsonline.com")?url.replace(/www\./i,"m."):document.querySelector("link[rel='canonical']").href+window.location.search;else if(-1<url.indexOf("?d=mobile"))var tempUrl=url.replace(/\?d=mobile&/i,"?"),newUrl=tempUrl.replace(/\?d=mobile/i,"");else newUrl=-1<url.indexOf("&d=mobile")?url.replace(/&d=mobile/i,""):-1<window.location.search.indexOf("?")?url+"&d=mobile":url+"?d=mobile";window.location.href=newUrl;})();' title="Click and drag this button to your browser's bookmark bar.">Toggle Mobile</a>
+                        <h2 class="post-title">Toggle mobile rendering</h2>
+                        <p class="post-meta">
+                            <span class="post-category post-category-updated" href="#">Updated: Dec. 28, 2015</span>
+                        </p>
+                    </header>
+                    <div class="post-description">
+                        <p>
+                            This bookmarklet will modify the url of the page to render the page using the mobile templates. This should work on all sites.
+                        </p>
+                    </div>
+                </section>
+                <section class="post">
+                    <header class="post-header">
                         <a class="post-button pure-button pure-button-primary" onmousedown="ga('send', 'event', 'bookmarklet', 'facebook refresh');" href='javascript:(function(){ var encodedUrl=encodeURIComponent(window.location.href);function createXMLHTTPObject(){var XMLHttpFactories=[function(){return new XMLHttpRequest},function(){return new ActiveXObject("Msxml2.XMLHTTP")},function(){return new ActiveXObject("Msxml3.XMLHTTP")},function(){return new ActiveXObject("Microsoft.XMLHTTP")}];var xmlhttp=false;for(var i=0;i<XMLHttpFactories.length;i++){try{xmlhttp=XMLHttpFactories[i]()}catch(e){continue}break}return xmlhttp} function sendRequest(articleUrl){var req=createXMLHTTPObject();if(!req||!articleUrl)return null;req.open("POST","http://graph.facebook.com/",true);req.setRequestHeader("Content-type","application/x-www-form-urlencoded");req.onreadystatechange=function(){if(req.status==200&&req.readyState==4){console.log(req.responseText);var obj=JSON.parse(req.responseText);alert("Article refreshed.\nTitle: "+obj.title+"\nurl: "+obj.url)}};req.send("id="+encodedUrl+"&scrape=true")}sendRequest(encodedUrl);})();' title="Click and drag this button to your browser's bookmark bar.">Facebook Refresh</a>
                         <h2 class="post-title">Facebook debug the article page</h2>
                         <p class="post-meta">
@@ -212,13 +234,5 @@
             </div>
         </div> <!-- /.content -->
     </div> <!-- /#layout -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-61758561-2', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 </html>
