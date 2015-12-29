@@ -5,3 +5,5 @@ Webpage to compile a handful of gists
 - [FB Debug](https://gist.github.com/mtandre/78a946beb8d6dfe79f9c)
 - [Clear Cache](https://gist.github.com/mtandre/e0ca052b8639e3928fb8)
 - [Mobile Toggle](https://gist.github.com/mtandre/0f60e21cfc50b605814c)
+
+[![ghit.me](https://ghit.me/badge.svg?repo=mtandre/mjs-bookmarklets)](https://ghit.me/repo/mtandre/mjs-bookmarklets)
